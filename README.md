@@ -1,45 +1,44 @@
-# ☁️ Cloud Referee Kiro
+# Cloud Referee Kiro
 
-An intelligent cloud resource management and arbitration system with AI-driven decision making.
+## Overview
+Cloud Referee Kiro is an intelligent arbitration system designed to optimize cloud resource allocation and resolve conflicts in distributed environments. It acts as a neutral "referee," ensuring fair usage policies and efficient workload distribution across multi-cloud setups.
 
----
+## Features
+-   **AI Arbitration**: Machine learning models decide optimal resource distribution.
+-   **Conflict Resolution**: Automated handling of resource contention issues.
+-   **Policy Enforcement**: Real-time monitoring of SLA compliance.
+-   **Cost Optimization**: Suggestions for reducing cloud infrastructure changes.
+-   **Multi-Cloud Support**: Compatible with AWS, Azure, and GCP resources.
 
-## 🌟 Overview
+## Technology Stack
+-   **Core**: Python.
+-   **AI**: Scikit-learn / TensorFlow for decision logic.
+-   **Cloud SDKs**: Boto3 (AWS), Azure SDK, Google Cloud Client.
+-   **Database**: Redis for high-speed state management.
 
-Cloud Referee Kiro acts as an impartial arbiter for cloud resources, using AI to optimize allocation, resolve conflicts, and ensure fair usage policies across distributed systems.
+## Usage Flow
+1.  **Monitor**: Kiro observes resource usage across all connected nodes.
+2.  **Detect**: Use identifying bottlenecks or policy violations.
+3.  **Decide**: The AI engine calculates the best arbitration strategy.
+4.  **Act**: System automatically reallocates resources or throttles services.
 
-## ✨ Features
-
-- **AI Arbitration** - ML-based conflict resolution
-- **Resource Optimization** - Smart allocation algorithms
-- **Policy Enforcement** - Automated compliance checks
-- **Real-time Monitoring** - Live system status
-
-## 📁 Project Structure
-
-```
-cloud-referee-kiro/
-├── app.py           # Main application
-├── referee.py       # Core arbitration logic
-├── prompts/         # AI prompts
-└── .kiro/           # System config
-```
-
-## 🚀 Quick Start
-
+## Quick Start
 ```bash
 # Clone the repository
 git clone https://github.com/Nytrynox/Cloud-Referee-Kiro.git
-cd Cloud-Referee-Kiro
 
-# Run the referee
-python app.py
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure cloud credentials
+cp config.example.yaml config.yaml
+
+# Start the referee
+python main.py
 ```
 
-## 📝 License
-
+## License
 MIT License
 
-## 👤 Author
-
+## Author
 **Karthik Idikuda**
